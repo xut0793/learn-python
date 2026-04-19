@@ -30,7 +30,9 @@
 
 ## bool 布尔值
 
-布尔型的有效值只有 True 和 False，表示是和否。注意这里首字母大写，区分于 Java 或 JS 中全小写形式。
+布尔型的有效值只有 True 和 False，表示是和否。
+
+**注意这里首字母大写，区分于 Java 或 JS 中全小写形式**。
 
 - 假值 `falsy`：`None`、`''`、`False` 和 `0` 都是假值，在逻辑判断中都是 `False`。
 - 真值 `truthy`：除了假值之外的所有值都是真值。
@@ -193,7 +195,7 @@ pixel_data = b'\x12\x34\x56\x78'  # 假设这是一个像素的字节数据
 rgb = int.from_bytes(pixel_data[:3], byteorder='big')
 # 将第四个字节（透明度）从小端字节序转换为整数
 alpha = int.from_bytes(pixel_data[3:], byteorder='little')
-print(f"Pixel values: rgb={rgb}, alpha={alpha}") #输出：Pixel values: red=1193046, alpha=120
+print(f"Pixel values: rgb={rgb}, alpha={alpha}") #输出：Pixel values: rgb=1193046, alpha=120
 ```
 
 > 在 Python 中，字节串（bytes）和字符串（string）是两种不同类型的数据。

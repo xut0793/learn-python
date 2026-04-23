@@ -8,6 +8,7 @@
 
 - [x] 导论：如何学习编程语言
 - [x] Python 语言简介
+- [x] Python 之禅
 - **数据的表达**
   - [x] 数据类型: None,bool, int, float, str, bytes
   - [x] 数据引用: 标识符，变量，常量
@@ -20,8 +21,8 @@
   - [x] 分支：if, elif, else
   - [x] 循环：for, while
   - [x] 结构模式匹配 match
-- **代码复用和抽象的封装**
-  - [x] 函数
+- **代码复用和抽象**
+  - 函数
     - [x] 函数声明
     - [x] 函数调用
     - [x] 函数形参：无参、位置参数、关键字参数、仅位置参数/、仅关键字参数*、不定长位置参数*args、不字长关键字参数\*\*kwargs
@@ -37,14 +38,14 @@
     - [x] 生成器函数
     - [x] 装饰器函数
     - [x] 异步函数
-  - [x] 面向对象编程
+  - 面向对象编程
     - [x] 类 class
     - [x] 对象：类的实例
     - [x] 构建函数和初始函数 `__init__`
-    - [x] 属性
+    - 属性
       - [x] 实例属性
       - [x] 类属性
-    - [x] 方法
+    - 方法
       - [x] 实例方法
       - [x] 类方法
       - [x] 静态方法
@@ -56,11 +57,11 @@
     - [x] 魔术方法
     - [x] 数据类
     - [x] 枚举类
-  - [x] 模块
+  - 模块
     - [x] 导入机制
     - [x] 模块搜索路径
     - [x] 缓存机制
-  - [x] 包
+  - 包
     - [x] `__init__.py`：包的元数据、公共API、导入行为控制、初始化逻辑
     - [x] 绝对导入与相对导入
 - **异常**
@@ -69,8 +70,8 @@
   - [x] 排查错误（调试）: pdb, logging
   - [x] 预防错误（测试）: pytest, doctest
 - **高并发的实现**
-  - [ ] 多进程: multiprocessing
-  - [ ] 多线程: threading
+  - [ ] 进程: multiprocessing
+  - [ ] 线程: threading
   - [ ] 并发： concurrent
   - [ ] 异步: asyncio
 - **标准库**
@@ -81,19 +82,26 @@
   - [ ] 数据类型
   - [ ] 数据压缩和存档
   - [ ] 函数式编程
-  - [x] 系统和文件
-    - [x] 系统 os
-    - [x] io 流
-    - [x] 文件路径 pathlib
-    - [x] 文件操作 open
+  - 系统和文件
+  - [x] 系统 os
+  - [x] io 流
+  - [x] 文件路径 pathlib
+  - [x] 文件操作 open
   - [ ] 命令行
-  - [ ] 网络
-    - [x] urllib
-    - [ ] socket
-    - [ ] socketserver
-    - [ ] http
-    - [ ] http.client 和 urllib.request
-  - [ ] 数据库
+  - 网络
+  - [x] urllib
+  - [x] ip/dns
+  - [x] tcp/udp
+  - [x] url: urllib.parse
+  - http
+    - [x] client: http.client urllib.request requests
+    - [x] server: socketServer http.server SimpleHTTPServer
+    - [x] web网关协议: cgi fastcgi wsgi asgi
+  - 数据持久化存储
+  - [x] 文本数据：简单文本文件、填充式文本文件、结构化文本文件（csv xml json yaml toml）
+  - [x] 二进进制数据：简单二进制文件、填充式二进制文件、结构化二进制文件（excel word pdf ）
+  - [x] 数据库：关系数据库、非关系数据库
+  - [x] DB-API、ORM、SQLAlchemy
 - **项目工程化**
   - [ ] 项目环境隔离: .venv uv
   - [ ] 项目结构

@@ -22,7 +22,7 @@ permissions:
 # 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
 # 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成
 concurrency:
-  group: pages
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -37,13 +37,14 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e .
+        run: uv sync
 
       - name: Build MkDocs site
-        run: mkdocs build --strict
+        run: uv run mkdocs build --strict
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

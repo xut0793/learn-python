@@ -8,8 +8,3 @@ dependencies = [
     "markdown-checklist>=0.4.4",
     "mkdocs>=1.6.1",
 ]
-
-[dependency-groups]
-dev = [
-    "jupyterlab>=4.5.6",
-]

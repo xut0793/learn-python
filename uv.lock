@@ -66,9 +66,6 @@ requires-dist = [
     { name = "mkdocs", specifier = ">=1.6.1" },
 ]
 
-[package.metadata.requires-dev]
-dev = []
-
 [[package]]
 name = "markdown"
 version = "3.8.2"

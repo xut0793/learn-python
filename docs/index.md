@@ -70,10 +70,10 @@
   - [x] 排查错误（调试）: pdb, logging
   - [x] 预防错误（测试）: pytest, doctest
 - **高并发的实现**
-  - [ ] 进程: multiprocessing
-  - [ ] 线程: threading
-  - [ ] 并发： concurrent
-  - [ ] 异步: asyncio
+  - [x] 进程: multiprocessing
+  - [x] 线程: threading
+  - [x] 并发： concurrent.futures
+  - [x] 异步: asyncio
 - **标准库**
   - [x] 内置常量
   - [x] 内置函数
